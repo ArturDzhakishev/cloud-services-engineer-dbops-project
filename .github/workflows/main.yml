@@ -19,7 +19,6 @@ jobs:
         password: ${{ DB_PASSWORD }}
         locations: filesystem:./migrations
 
-
     ### Этот шаг оставьте без изменений
     - name: Download and setup autotests binaries
       run: |
