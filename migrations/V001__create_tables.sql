@@ -11,7 +11,7 @@ CREATE TABLE orders (
   date_created DATE DEFAULT CURRENT_DATE
 );
 
-CREATE TABLE orders (
+CREATE TABLE order_product (
   quantity INTEGER NOT NULL,
   order_id BIGINT NOT NULL,
   product_id BIGINT NOT NULL
