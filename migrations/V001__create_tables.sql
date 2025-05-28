@@ -17,7 +17,7 @@ CREATE TABLE orders (
 
 CREATE TABLE orders_date (
   order_id BIGINT NOT NULL,
-  status VARCHAR(255)
+  status VARCHAR(255),
   date_created DATE DEFAULT CURRENT_DATE
 );
 
