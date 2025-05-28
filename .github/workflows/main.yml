@@ -15,8 +15,8 @@ jobs:
       uses: flyway/flyway-action@v2
       with:
         url: jdbc:postgresql://${{ secrets.DB_HOST }}:${{ secrets.DB_PORT }}/${{ secrets.DB_NAME }}
-        user: ${{ DB_USER }}
-        password: ${{ DB_PASSWORD }}
+        user: ${{ secrets.DB_USER }}
+        password: ${{ secrets.DB_PASSWORD }}
         locations: filesystem:./migrations
 
     ### Этот шаг оставьте без изменений
