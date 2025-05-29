@@ -28,7 +28,7 @@ jobs:
         FLYWAY_SCHEMAS: public
         FLYWAY_LOCATIONS: filesystem:migrations
       run: |
-        flyway clean -cleanDisabled=false
+        flyway migrate
 
     ### Этот шаг оставьте без изменений
     - name: Download and setup autotests binaries
